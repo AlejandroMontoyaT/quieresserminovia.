@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> QUIERES SER MI NOVIA O TE FRESEAS? </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: lightcoral;
+            }
+               </style>
+               <script>
+                    function accionParacuandoEllaDigaQueNo() {
+                        alert('Por que no quieres ser mi novia')
+                    } 
+                    function mueveElBoton() {
+                       width = window.innerWidth;
+                       height = window.innerHeight;
+
+                       newWidth = (Math.random() * width);
+                       newheight = (Math.random() * height);
+                          document.getElementById('btnSi').style.position = "absolute";
+                          document.getElementById('btnSi').style.left = newWidth + "px";
+                          document.getAnimations().style.top = newheight + "px";
+                    }
+
+                    </script>
+    </head>
+    <body>
+        <h3> QUIERES SER MI NOVIA O TE FRESEAS? </h3>
+        <input type="button" onclick="accionParacuandoEllaDigaQueNo()" id="btnNo" value="No" />
+        <input type="button" id="btnSi" onmouseover="mueveElBoton()" value="Si" />
+    </body>
+    </html>
